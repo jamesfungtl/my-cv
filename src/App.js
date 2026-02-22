@@ -5,6 +5,7 @@ import ProfileSummary from "./components/ProfileSummary";
 import TechnicalWorkingExperiences from "./components/TechnicalWorkingExperiences";
 import CanadaWorkingExperiences from "./components/CanadaWorkingExperiences";
 import Sidebar from './components/Sidebar';
+import Skills from './components/Skills';
 import EducationForMobile from './components/EducationForMobile';
 import OnlineCertificatesForMobile from './components/OnlineCertificatesForMobile';
 import LanguagesForMobile from './components/LanguagesForMobile';
@@ -21,6 +22,7 @@ function App() {
           <CanadaWorkingExperiences />
           <OnlineCertificatesForMobile />
           <LanguagesForMobile />
+          <Skills />
         </div>
       </div>
     </div>

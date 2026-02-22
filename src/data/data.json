@@ -127,6 +127,44 @@
             }
         ]
     },
+    "skills": {
+        "title": "Technical skills",
+        "toolset": [
+            {
+                "name": "JavaScript & TypeScript",
+                "level": "95%"
+            },
+            {
+                "name": "React",
+                "level": "93%"
+            },
+            {
+                "name": "SQL (MySQL, SQL Server & Oracle)",
+                "level": "93%"
+            },
+            {
+                "name": "MongoDB",
+                "level": "93%"
+            },
+            {
+                "name": "Git / SVN / CVS (Git-flow / truck-based)",
+                "level": "93%"
+            },
+            {
+                "name": "Azure DevOps / Jira",
+                "level": "90%"
+            },
+            {
+                "name": "Scrum",
+                "level": "90%"
+            },
+            {
+                "name": "Java",
+                "level": "80%"
+            }
+
+        ]
+    },
     "sidebar": {
         "name": "James Fung",
         "tagline": "Full Stack Software Developer",
