@@ -6,6 +6,7 @@ import TechnicalWorkingExperiences from "./components/TechnicalWorkingExperience
 import CanadaWorkingExperiences from "./components/CanadaWorkingExperiences";
 import Sidebar from './components/Sidebar';
 import EducationForMobile from './components/EducationForMobile';
+import OnlineCertificatesForMobile from './components/OnlineCertificatesForMobile';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <TechnicalWorkingExperiences />
           <EducationForMobile />
           <CanadaWorkingExperiences />
+          <OnlineCertificatesForMobile />
         </div>
       </div>
     </div>

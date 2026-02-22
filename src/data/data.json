@@ -92,14 +92,20 @@
         "info": [
             {
                 "name": "JavaScript (Intermediate) from Hackerrank",
+                "time": "29 Dec 2025",
+                "organization": "Hackerrank",
                 "link": "https://www.hackerrank.com/certificates/4ce1c41a05bd"
             },
             {
                 "name": "Problem Solving (Intermediate)",
+                "time": "29 Dec 2025",
+                "organization": "Hackerrank",
                 "link": "https://www.hackerrank.com/certificates/bda5783abac3"
             },
             {
                 "name": "SQL (Intermediate)",
+                "time": "09 Jan 2026",
+                "organization": "Hackerrank",
                 "link": "https://www.hackerrank.com/certificates/84b3ae47cfcc"
             }
         ]
