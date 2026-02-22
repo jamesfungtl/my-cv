@@ -7,6 +7,7 @@ import CanadaWorkingExperiences from "./components/CanadaWorkingExperiences";
 import Sidebar from './components/Sidebar';
 import EducationForMobile from './components/EducationForMobile';
 import OnlineCertificatesForMobile from './components/OnlineCertificatesForMobile';
+import LanguagesForMobile from './components/LanguagesForMobile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <EducationForMobile />
           <CanadaWorkingExperiences />
           <OnlineCertificatesForMobile />
+          <LanguagesForMobile />
         </div>
       </div>
     </div>

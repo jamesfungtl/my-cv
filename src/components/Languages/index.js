@@ -6,17 +6,17 @@ export const Languages = () => {
 
     return (
         <div className="desktop-only">
-            {data?.languages?.title && <div class="languages-container container-block">
+            {data?.languages?.title && <div className="languages-container container-block">
 
                 <h2 className="container-block-title">
                     {data.languages.title}
                 </h2>
-                <ul class="list-unstyled interests-list">
+                <ul className="list-unstyled interests-list">
                     {
                         languageListWithId?.map(lang => (
                             <li>
                                 {lang.language}
-                                <span class="lang-desc">({lang.level})</span>
+                                <span className="lang-desc">({lang.level})</span>
                             </li>
                         ))
                     }
