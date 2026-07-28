@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import data from "../../data/data.json";
 
@@ -22,6 +22,12 @@ export const Contact = () => {
                     <FontAwesomeIcon icon={faGithub} className="fab" />
                     <a href={`https://github.com/${data.sidebar.github}`} target="_blank" rel="noopener noreferrer">
                         {data.sidebar.github}
+                    </a>
+                </li>}
+                {data?.sidebar?.demo && <li>
+                    <FontAwesomeIcon icon={faGlobe} className="fab"/>
+                    <a href={data.sidebar.demo} target="_blank" rel="noopener noreferrer">
+                        {data.sidebar.demo}
                     </a>
                 </li>}
             </ul>
