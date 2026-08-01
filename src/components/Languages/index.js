@@ -11,7 +11,7 @@ export const Languages = () => {
                 <h2 className="container-block-title">
                     {data.languages.title}
                 </h2>
-                <ul className="list-unstyled interests-list">
+                <ul className="list-unstyled languages-list">
                     {
                         languageListWithId?.map(lang => (
                             <li>

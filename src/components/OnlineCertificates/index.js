@@ -15,7 +15,7 @@ export const OnlineCertificates = () => {
                     certListWithId?.map(cert => (
                         <div key={cert.id} className="item">
                             <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                {cert.name}
+                                {`${cert.name} - Issued by ${cert.organization}`}
                             </a>
                         </div>
                     ))

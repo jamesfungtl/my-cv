@@ -1,5 +1,6 @@
 @use "./variables";
 @use './mixins';
+@use "sass:color";
 @import './responsive';
 
 body {
@@ -10,26 +11,21 @@ body {
     padding: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.42857143
+    line-height: 1.5
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
 a {
-    color: darken(variables.$theme-color, 15%);
+    color: color.adjust(variables.$theme-color, $lightness: -15%);
 
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
-        color: darken(variables.$theme-color, 30%);
+        color: color.adjust(variables.$theme-color, $lightness: -30%);
     }
 
     &:focus {
@@ -70,8 +66,8 @@ p {
         padding: 30px;
         padding-top: 80px;
         padding-bottom: 80px;
-        //background: darken($theme-color, 10%);
-        background: rgba(0, 0, 0, 0.2);
+        background: color.adjust(variables.$theme-color, $lightness: -10%);
+        // background: rgba(0, 0, 0, 0.2);
         text-align: center;
         color: #fff;
     }
@@ -87,28 +83,12 @@ p {
         color: rgba(256, 256, 256, 0.6);
         font-size: 16px;
         font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .profile {
-        margin-bottom: 15px;
-    }
-
-    .avatar {
-        //used for profile image
-        max-width: 100px;
-        margin-bottom: 15px;
-        border: 0px solid #fff;
-        border-radius: 100%;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin: 0;
     }
 
     .contact-list {
 
-        .fas,
-        .fab,
-        .far {
+        .fas, .fab, .far {
             margin-right: 5px;
             font-size: 18px;
             vertical-align: middle;
@@ -153,14 +133,14 @@ p {
         .meta {
             color: rgba(256, 256, 256, 0.6);
             font-weight: 500;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             margin-top: 0;
         }
 
         .time {
             color: rgba(256, 256, 256, 0.6);
             font-weight: 500;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
@@ -171,18 +151,6 @@ p {
     }
 
     .languages-list {
-        margin-bottom: 0;
-
-        li {
-            margin-bottom: 10px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .interests-list {
         margin-bottom: 0;
 
         li {
@@ -205,7 +173,7 @@ p {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 500;
-        color: darken(variables.$theme-color, 15%);
+        color: color.adjust(variables.$theme-color, $lightness: -15%);
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
@@ -216,15 +184,20 @@ p {
     }
 
     .experiences-section,
-    .recommendations-section,
     .educations-section {
         .item {
             margin-bottom: 30px;
         }
     }
 
-    .upper-row,
-    .second-upper-row {
+    .certifications-section,
+    .languages-section {
+        .item {
+            margin-bottom: 15px;
+        }
+    }
+
+    .upper-row {
         position: relative;
         overflow: hidden;
         margin-bottom: 2px;
@@ -233,8 +206,7 @@ p {
 
     .job-title,
     .degree,
-    .cert-title,
-    .recommendation-person {
+    .cert-title {
         color: variables.$text-color;
         font-size: 16px;
         margin-top: 0;
@@ -243,8 +215,7 @@ p {
         flex: 75%;
     }
 
-    .time,
-    .cert-url {
+    .time {
         position: absolute;
         right: 0;
         top: 0;
@@ -253,62 +224,9 @@ p {
     }
 
     .company,
-    .recommendation-role,
-    .university,
-    .cert-org {
+    .university {
         margin-bottom: 10px;
         color: variables.$text-grey;
-    }
-
-    .project-title {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 5px;
-        color: darken(variables.$theme-color, 15%);
-    }
-
-    .projects-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-
-        .item {
-            margin-bottom: 15px;
-        }
-    }
-
-    .oss-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-
-        .item {
-            margin-bottom: 15px;
-        }
-    }
-
-    .publication-title {
-        font-size: 16px;
-        font-weight: 400;
-        color: variables.$text-color;
-        margin-bottom: 1px;
-    }
-
-    .publication-authors {
-        font-style: italic;
-        color: variables.$text-grey;
-        margin-bottom: 1px;
-    }
-
-    .publications-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-
-        .item {
-            margin-bottom: 15px;
-        }
     }
 }
 
@@ -332,6 +250,6 @@ p {
 
     .level-bar-inner {
         height: 12px;
-        background: lighten(variables.$theme-color, 15%);
+        background: color.adjust(variables.$theme-color, $lightness: 15%);
     }
 }
