@@ -23,17 +23,16 @@
 
   .main-wrapper {
     padding: 30px;
-  }
 
-  .main-wrapper .time {
-    position: static;
-    display: block;
-    margin-top: 5px;
-  }
+    .upper-row {
+      display: block;
+    }
 
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
-    display: block;
+    .time {
+      position: static;
+      display: block;
+      margin-top: 5px;
+    }
   }
 
   .desktop-only {
@@ -50,17 +49,19 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .skillset .level-title {
-    float: left;
-    width: 30%;
-    margin-bottom: 0;
-  }
+  .skillset {
 
-  .skillset .level-bar {
-    width: 70%;
-    float: left;
-    position: relative;
-    top: 1px;
+    .level-title {
+      float: left;
+      width: 30%;
+    }
+
+    .level-bar {
+      width: 70%;
+      float: left;
+      position: relative;
+      top: 4px;
+    }
   }
 }
 
