@@ -1,9 +1,9 @@
 import React from "react";
 import data from "../../data/data.json";
-import Contact from "../Contact";
-import Education from "../Education";
-import OnlineCertificates from "../OnlineCertificates";
-import Languages from "../Languages";
+import Contact from "../Contact/Contact";
+import Education from "../Education/Education";
+import OnlineCertificates from "../OnlineCertificates/OnlineCertificates";
+import Languages from "../Languages/Languages";
 
 export const Sidebar = () => {
     return (

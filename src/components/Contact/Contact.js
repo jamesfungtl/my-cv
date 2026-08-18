@@ -1,4 +1,4 @@
-import ContactItem from "../ContactItem";
+import ContactItem from "../ContactItem/ContactItem";
 import data from "../../data/data.json";
 import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
