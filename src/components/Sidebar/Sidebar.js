@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../../data/data.json";
 import Contact from "../Contact/Contact";
 import Education from "../Education/Education";
