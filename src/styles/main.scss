@@ -14,7 +14,12 @@ body {
     line-height: 1.5
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
@@ -63,32 +68,29 @@ p {
     }
 
     .profile-container {
-        padding: 30px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding: 80px 30px;
         background: color.adjust(variables.$theme-color, $lightness: -10%);
         // background: rgba(0, 0, 0, 0.2);
         text-align: center;
         color: #fff;
-    }
 
-    .name {
-        font-size: 32px;
-        font-weight: 900;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
+        .name {
+            font-size: 32px;
+            font-weight: 900;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
 
-    .tagline {
-        color: rgba(256, 256, 256, 0.6);
-        font-size: 16px;
-        font-weight: 400;
-        margin: 0;
+        .tagline {
+            color: variables.$dim-white;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0;
+        }
     }
 
     .contact-list {
-
-        .fas, .fab, .far {
+        .fab {
             margin-right: 5px;
             font-size: 18px;
             vertical-align: middle;
@@ -103,24 +105,19 @@ p {
         }
     }
 
-    .container-block {
+    .general-container {
         padding: 30px;
+
+        .general-container-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
     }
 
-    .container-block-title {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-
-    .degree {
-        font-size: 14px;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-
+    .certificates-container,
     .education-container {
         .item {
             margin-bottom: 15px;
@@ -129,16 +126,25 @@ p {
                 margin-bottom: 0;
             }
         }
+    }
 
-        .meta {
-            color: rgba(256, 256, 256, 0.6);
-            font-weight: 500;
-            margin-bottom: 0;
+    .education-container {
+        .degree {
+            font-size: 14px;
             margin-top: 0;
+            margin-bottom: 5px;
         }
 
+        .details {
+            color: variables.$dim-white;
+            font-weight: 500;
+            margin: 0;
+            white-space: pre-line;
+        }
+
+        .university,
         .time {
-            color: rgba(256, 256, 256, 0.6);
+            color: variables.$dim-white;
             font-weight: 500;
             margin-bottom: 0;
         }
@@ -146,18 +152,18 @@ p {
 
     .languages-container {
         .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
+            color: variables.$dim-white;
         }
-    }
 
-    .languages-list {
-        margin-bottom: 0;
+        .languages-list {
+            margin-bottom: 0;
 
-        li {
-            margin-bottom: 10px;
+            li {
+                margin-bottom: 10px;
 
-            &:last-child {
-                margin-bottom: 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -169,18 +175,18 @@ p {
     background: #fff;
     padding: 60px;
 
-    .section-title {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 500;
-        color: color.adjust(variables.$theme-color, $lightness: -15%);
-        position: relative;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
     .section {
         margin-bottom: 60px;
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            color: color.adjust(variables.$theme-color, $lightness: -15%);
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     }
 
     .experiences-section,
@@ -190,7 +196,13 @@ p {
         }
     }
 
-    .certifications-section,
+    .educations-section {
+        .details {
+            white-space: pre-line;
+        }
+    }
+
+    .certificates-section,
     .languages-section {
         .item {
             margin-bottom: 15px;

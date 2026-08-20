@@ -5,9 +5,9 @@ export const OnlineCertificates = () => {
 
     return (
         <div className="desktop-only">
-            {data?.onlineCertificates?.title && <div className="education-container container-block">
+            {data?.onlineCertificates?.title && <div className="certificates-container general-container">
 
-                <h2 className="container-block-title">
+                <h2 className="general-container-title">
                     {data.onlineCertificates.title}
                 </h2>
                 {

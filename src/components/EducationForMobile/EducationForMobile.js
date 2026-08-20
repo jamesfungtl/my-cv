@@ -13,19 +13,16 @@ export const EducationForMobile = () => {
                 educationListWithId?.map(education => (
                     <div className="item">
 
-                        <div className="meta">
-
-                            <div className="upper-row">
-                                <h3 className="degree">{education.degree}</h3>
-                                <div className="time">{education.time}</div>
-                            </div>
-
-                            <div className="university">{education.university}</div>
+                        <div className="upper-row">
+                            <h3 className="degree">{education.degree}</h3>
+                            <div className="time">{education.time}</div>
                         </div>
+
+                        <div className="university">{education.university}</div>
 
                         {
                             education.details &&
-                            <div className="details" style={{ whiteSpace: "pre-line" }}>
+                            <div className="details">
                                 {education.details}
                             </div>
                         }

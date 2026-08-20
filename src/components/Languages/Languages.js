@@ -5,9 +5,9 @@ export const Languages = () => {
 
     return (
         <div className="desktop-only">
-            {data?.languages?.title && <div className="languages-container container-block">
+            {data?.languages?.title && <div className="languages-container general-container">
 
-                <h2 className="container-block-title">
+                <h2 className="general-container-title">
                     {data.languages.title}
                 </h2>
                 <ul className="list-unstyled languages-list">

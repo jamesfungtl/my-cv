@@ -5,7 +5,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
     return (
-        <div className="contact-container container-block">
+        <div className="contact-container general-container">
             <ul className="list-unstyled contact-list">
                 {data?.sidebar?.email &&
                     <ContactItem
