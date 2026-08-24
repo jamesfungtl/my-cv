@@ -13,7 +13,7 @@ export const Languages = () => {
                 <ul className="list-unstyled languages-list">
                     {
                         languageListWithId?.map(lang => (
-                            <li>
+                            <li key={lang.id}>
                                 {lang.language}
                                 <span className="lang-desc">({lang.level})</span>
                             </li>

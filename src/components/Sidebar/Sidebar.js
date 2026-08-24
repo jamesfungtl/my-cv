@@ -3,6 +3,7 @@ import Contact from "../Contact/Contact";
 import Education from "../Education/Education";
 import OnlineCertificates from "../OnlineCertificates/OnlineCertificates";
 import Languages from "../Languages/Languages";
+import "./sidebar.scss";
 
 export const Sidebar = () => {
     return (

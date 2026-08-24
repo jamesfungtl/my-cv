@@ -1,0 +1,25 @@
+@use "../../styles/variables";
+@use "sass:color";
+
+.skillset {
+    .item {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .level-title {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .level-bar {
+        height: 12px;
+        background: variables.$smoky-white;
+    }
+
+    .level-bar-inner {
+        height: 12px;
+        background: color.adjust(variables.$theme-color, $lightness: 15%);
+    }
+}

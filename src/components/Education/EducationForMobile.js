@@ -11,7 +11,7 @@ export const EducationForMobile = () => {
             </h2>
             {
                 educationListWithId?.map(education => (
-                    <div className="item">
+                    <div key={education.id} className="item">
 
                         <div className="upper-row">
                             <h3 className="degree">{education.degree}</h3>

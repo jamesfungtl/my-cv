@@ -1,4 +1,5 @@
 import data from "../../data/data.json";
+import "./skills.scss";
 
 export const Skills = () => {
     const skillListWithId = data?.skills?.toolset?.map((item, idx) => ({ ...item, id: idx + 1 }));
@@ -10,7 +11,7 @@ export const Skills = () => {
                 <h2 className="section-title">
                     {data.skills.title}
                 </h2>
-                <div class="skillset">
+                <div className="skillset">
                     {skillListWithId.map(skill => (
                         <div key={skill.id} className="item">
                             <h3 className="level-title">{skill.name}</h3>

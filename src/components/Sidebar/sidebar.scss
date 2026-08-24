@@ -1,0 +1,114 @@
+@use "../../styles/variables";
+@use "sass:color";
+
+.sidebar-wrapper {
+    grid-column: span 3;
+    order: variables.$sidebar-order;
+    background: variables.$theme-color;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+
+    .profile-container {
+        padding: 80px 30px;
+        background: color.adjust(variables.$theme-color, $lightness: -10%);
+        // background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #fff;
+
+        .name {
+            font-size: 32px;
+            font-weight: 900;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: variables.$dim-white;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .contact-list {
+        .fab {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .general-container {
+        padding: 30px;
+
+        .general-container-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .certificates-container,
+    .education-container {
+        .item {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .education-container {
+        .degree {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            color: variables.$dim-white;
+            font-weight: 500;
+            margin: 0;
+            white-space: pre-line;
+        }
+
+        .university,
+        .time {
+            color: variables.$dim-white;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+
+    .languages-container {
+        .lang-desc {
+            color: variables.$dim-white;
+        }
+
+        .languages-list {
+            margin-bottom: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
