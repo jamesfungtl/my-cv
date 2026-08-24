@@ -1,7 +1,7 @@
 @use "./variables";
 @use './mixins';
 @use "sass:color";
-@import './responsive';
+@use './responsive';
 
 body {
     font-family: "Roboto", sans-serif;
@@ -104,7 +104,7 @@ p {
         display: flex;
     }
 
-    .job-title,
+    .job-role,
     .degree,
     .cert-title {
         color: variables.$text-color;

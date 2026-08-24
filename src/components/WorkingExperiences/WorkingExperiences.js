@@ -1,5 +1,5 @@
 
-export const WorkingExperiences = ({workingExperiences}) => {
+export const WorkingExperiences = ({ workingExperiences }) => {
     let experiencesWithId = workingExperiences?.info?.map((item, idx) => ({ ...item, id: idx + 1 }));
 
     return (
@@ -12,16 +12,13 @@ export const WorkingExperiences = ({workingExperiences}) => {
                 {experiencesWithId?.map(job => (
                     <div key={job.id} className="item">
 
-                        <div className="meta">
-
-                            <div className="upper-row">
-                                <h3 className="job-title">{job.role}</h3>
-                                <div className="time">{job.time}</div>
-                            </div>
-
-                            <div className="company">{job.company}</div>
-
+                        <div className="upper-row">
+                            <h3 className="job-role">{job.role}</h3>
+                            <div className="time">{job.time}</div>
                         </div>
+
+                        <div className="company">{job.company}</div>
+
                         <div className="details">
                             <ul>
                                 {job.details.map((detail, idx) => (
