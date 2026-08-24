@@ -1,17 +1,15 @@
-import data from "../../data/data.json";
 
-export const CanadaWorkingExperiences = () => {
-    const canadaWorkingExperienceListWithId = data?.canadaWorkingExperiences?.info?.map((item, idx) => ({ ...item, id: idx + 1 }));
+export const WorkingExperiences = ({workingExperiences}) => {
+    let experiencesWithId = workingExperiences?.info?.map((item, idx) => ({ ...item, id: idx + 1 }));
 
     return (
         <section className="section experiences-section">
-            {data?.canadaWorkingExperiences && <div>
-
+            {workingExperiences && <div>
                 <h2 className="section-title">
-                    {data?.canadaWorkingExperiences?.title}
+                    {workingExperiences.title}
                 </h2>
 
-                {canadaWorkingExperienceListWithId.map(job => (
+                {experiencesWithId?.map(job => (
                     <div key={job.id} className="item">
 
                         <div className="meta">
@@ -38,4 +36,4 @@ export const CanadaWorkingExperiences = () => {
     );
 };
 
-export default CanadaWorkingExperiences;
+export default WorkingExperiences;
