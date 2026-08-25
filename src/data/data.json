@@ -115,7 +115,11 @@
         "info": [
             {
                 "language": "English ",
-                "level": "Fluent"
+                "level": "Fluent",
+                "details": [
+                    "CELPIP - Listening: 8, Reading: 10, Writing: 9, Speaking: 7",
+                    "Common Recruitment Examination - Level 2"
+                ]
             },
             {
                 "language": "Cantonese ",
